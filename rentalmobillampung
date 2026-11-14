@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4Q1WH1HHNL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4Q1WH1HHNL');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" id="meta-theme" content="#0b1b3d">
+  <title id="page-title">Prasetyo Trans | Rental Mobil Lampung</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --ink: #0b1b3d;
+      --gold: #00aeef;
+      --gold2: #4dcbf7;
+      --cream: #f6f3ed;
+      --muted: #74716a;
+      --white: #fff;
+    }
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    html, body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+      font-family:'DM Sans',Arial,sans-serif;
+      color:var(--ink);
+      background:#fff;
+    }
+    a{text-decoration:none;color:inherit}
+    .wrap{width:min(1160px,92%);margin:auto;padding-left:15px;padding-right:15px;}
+    .topbar{background:#0c0e0f;color:#d8d3c8;font-size:12px;padding:9px 0;letter-spacing:.04em}
+    .topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{background:rgba(17,19,21,.97);color:white;position:sticky;top:0;z-index:10;border-bottom:1px solid #ffffff18}
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;}
+    
+    .brand-text {font-family:'Montserrat',sans-serif;font-weight:800;text-transform:uppercase;line-height:1;display:flex;flex-direction:column;}
+    .brand-text .w1 {color:#fff;font-size:24px;letter-spacing:0.03em;} 
+    .brand-text .w2 {color:#00aeef;font-size:24px;letter-spacing:0.03em;}
+    .brand-inline {font-family:'Montserrat',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:0.02em;}
+    .brand-inline .w1 {color:#0b1b3d;} 
+    .brand-inline .w2 {color:#00aeef;} 
+    
+    .brand-mark {width:45px;height:45px;display:grid;place-items:center;font-family:Georgia,serif;font-size:21px;border:1px solid var(--gold);color:var(--gold);}
+    img.brand-mark {border:none;background:transparent;object-fit:contain;}
+    
+    .links{display:flex;align-items:center;gap:25px;font-size:13px;color:#e6e3dd}
+    .links a:hover{color:var(--gold2)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;background:var(--gold);color:#fff;border:1px solid var(--gold);font-weight:700;font-size:12px;letter-spacing:.06em;border-radius:2px;transition:.2s; cursor:pointer;}
+    .btn:hover{background:var(--gold2);transform:translateY(-1px); border-color:var(--gold2);}
+    .btn-outline{background:transparent;color:white;border-color:#ffffff70}
+    .menu{display:none;background:none;border:1px solid #ffffff55;color:white;padding:8px 11px;font-size:20px;cursor:pointer;}
+    
+    .hero{background:linear-gradient(90deg,rgba(10,12,13,.94) 0%,rgba(10,12,13,.78) 48%,rgba(10,12,13,.18) 100%),#0b1b3d center/cover;min-height:590px;color:white;display:flex;align-items:center}
+    .hero-copy{max-width:620px;padding:82px 0}
+    .eyebrow{color:var(--gold2);font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+    h1,h2,h3,p{margin-top:0}
+    h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(42px,6vw,70px);line-height:1.08;font-weight:600;margin:18px 0}
+    h1 span{color:var(--gold2)}
+    .hero p{color:#e0ded9;line-height:1.8;max-width:510px;font-size:15px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .trustline{display:flex;gap:25px;flex-wrap:wrap;margin-top:46px;color:#e6e0d4;font-size:12px}
+    .trustline span:before{content:'✓';color:var(--gold);margin-right:8px;font-weight:bold}
+    
+    section{padding:82px 0}
+    .section-head{text-align:center;max-width:650px;margin:0 auto 38px}
+    .section-head h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(30px,4vw,43px);margin:12px 0}
+    .section-head p{color:var(--muted);line-height:1.75;font-size:14px}
+    .cream{background:var(--cream)}
+    
+    .fleet{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:20px}
+    .car-card{background:white;border:1px solid #e9e5dc;border-radius:8px;overflow:hidden}
+    .car-photo{height:200px;background-size:cover;background-position:center;background-color:#e2e8f0}
+    .car-body{padding:20px}
+    .car-body h3{font-size:18px;margin-bottom:8px}
+    .tag{display:inline-block;background:#eef7ff;color:#00aeef;padding:5px 9px;font-size:10px;font-weight:700;letter-spacing:.06em;border-radius:4px}
+    
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+    .about-copy h2{font-family:'Playfair Display',Georgia,serif;font-size:40px;line-height:1.15}
+    .about-copy p{color:var(--muted);font-size:14px;line-height:1.9}
+    .checks{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:24px 0}
+    .checks div{font-size:13px;font-weight:600}.checks div:before{content:'✓';color:var(--gold);margin-right:9px}
+    
+    .contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .contact-card{padding:25px;border:1px solid #e9e5dc;background:rgba(255,255,255,0.9)}
+    .contact-card strong{display:block;margin:12px 0 7px}
+    .contact-card p{font-size:13px;color:var(--muted);line-height:1.6;margin:0}
+    
+    #layanan, #kontak {
+      background: linear-gradient(rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.94)), 
+                  url('https://lh3.googleusercontent.com/d/1WusSaAIY1roLvDa9ZdPR5wnj_YW8nY4Z') center/contain no-repeat fixed;
+    }
+    
+    footer{background:#0c0e0f;color:#c9c4b9;padding:45px 0}
+    .foot{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
+    footer small{font-size:12px;line-height:1.7}
+    .wa-float{position:fixed;right:20px;bottom:20px;z-index:20;background:#1fa855;color:white;border-radius:30px;padding:13px 18px;font-size:12px;font-weight:700;box-shadow:0 8px 25px #0003}
+    
+    .btn-exclusive {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 22px;
+      background: linear-gradient(135deg, rgba(28, 25, 21, 0.92) 0%, rgba(12, 13, 15, 0.98) 100%);
+      color: #f3d078;
+      border: 1px solid rgba(212, 175, 55, 0.65);
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      cursor: pointer;
+      overflow: hidden;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 20px rgba(212, 175, 55, 0.18), inset 0 0 12px rgba(212, 175, 55, 0.08);
+      transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .btn-exclusive::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 236, 179, 0.35), transparent);
+      transform: skewX(-25deg);
+      animation: luxuryShimmer 4s infinite;
+    }
+    @keyframes luxuryShimmer {
+      0% { left: -100%; }
+      40% { left: 150%; }
+      100% { left: 150%; }
+    }
+    .btn-exclusive:hover {
+      background: linear-gradient(135deg, #d4af37 0%, #f3d078 50%, #b8860b 100%);
+      color: #0b0d0f;
+      border-color: #f3d078;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(212, 175, 55, 0.45);
+    }
+
+    @media(max-width:850px){.links{gap:13px;font-size:12px}.about-grid{gap:30px}}
+    @media(max-width:640px){
+      .topbar .wrap{justify-content:center;text-align:center}.nav{min-height:66px}.menu{display:block}.links{display:none;position:absolute;top:66px;left:0;right:0;background:#151719;padding:18px 4%;flex-direction:column;align-items:flex-start;border-top:1px solid #ffffff20}.links.open{display:flex}.nav>.btn{display:none}
+      .hero{min-height:590px;background-position:58% center}.hero-copy{padding:65px 0}.hero p{font-size:14px}.trustline{gap:12px;flex-direction:column;margin-top:32px}
+      section{padding:62px 0}.contact-grid{grid-template-columns:1fr}.car-photo{height:220px}.about-grid{grid-template-columns:1fr}.about-copy h2{font-size:34px}.checks{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <span id="kota-layanan">Bandar Lampung & Seluruh Wilayah Lampung</span>
+      <span id="teks-topbar-kanan">Buka 24 Jam • No Transfer Duluan</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#" onclick="tampilHalaman('beranda', event)">
+        <div id="header-logo-container">
+          <span class="brand-mark">P</span>
+        </div>
+        <div style="display:flex; flex-direction:column; justify-content:center;">
+          <div class="brand-text">
+            <span class="w1 brand-w1">PRASETYO</span>
+            <span class="w2 brand-w2">TRANS</span>
+          </div>
+          <small id="brand-slogan" style="color:#a8a39a; font-size:9px; letter-spacing:0.18em; font-weight:600; margin-top:3px; text-transform:uppercase;">SEWA MOBIL LAMPUNG</small>
+        </div>
+      </a>
+      <nav class="links" id="navLinks">
+        <a href="#" onclick="tampilHalaman('beranda', event)">Beranda</a>
+        <a href="#" onclick="tampilHalaman('layanan', event)">Layanan Eksklusif</a>
+        <a href="#" onclick="tampilHalaman('armada', event)">Layanan Reguler</a>
+        <a href="#" onclick="tampilHalaman('tentang', event)">Tentang Kami</a>
+        <a href="#" onclick="tampilHalaman('kontak', event)">Kontak</a>
+      </nav>
+      <a class="btn link-booking" href="https://wa.me/6283172886568" target="_blank" rel="noopener">QUICK BOOKING</a>
+      <button class="menu" aria-label="Buka menu" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HALAMAN BERANDA -->
+    <div id="page-beranda" class="page-section">
+      <section class="hero" id="home">
+        <div class="wrap"><div class="hero-copy">
+          <div class="eyebrow" id="hero-label">RENTAL MOBIL & TRANSPORTASI LAMPUNG</div>
+          <h1><span id="hero-judul" style="color:white;">Perjalanan Nyaman</span><br><span id="hero-judul-aksen">dan Hati Tenang</span></h1>
+          <p id="hero-deskripsi">Layanan sewa mobil Bandar Lampung lepas kunci, dengan driver, maupun antar jemput bandara. Harga deal di awal tanpa biaya tersembunyi.</p>
+          <div class="hero-actions">
+            <a class="btn link-booking" href="https://wa.me/6283172886568" target="_blank" rel="noopener">PESAN SEKARANG ↗</a>
+            <button class="btn btn-outline" onclick="tampilHalaman('armada', event)">LAYANAN REGULER</button>
+            <button class="btn-exclusive" onclick="tampilHalaman('layanan', event)">✦ LAYANAN EKSKLUSIF</button>
+          </div>
+          <div class="trustline"><span>Pelayanan ramah</span><span>Pemesanan praktis</span><span>Perjalanan fleksibel</span></div>
+        </div></div>
+      </section>
+    </div>
+
+    <!-- HALAMAN LAYANAN EKSKLUSIF -->
+    <div id="page-layanan" class="page-section" style="display:none;">
+      <section id="layanan" style="padding: 60px 0;">
+        <div class="wrap">
+          <div class="section-head" style="margin-bottom: 30px;">
+            <div class="eyebrow" style="color: #b8860b;">✦ VIP & INTERCITY EXCLUSIVE</div>
+            <h2>Katalog Layanan Eksklusif <span class="brand-inline"><span class="w1 brand-w1">PRASETYO</span> <span class="w2 brand-w2">TRANS</span></span></h2>
+            <p>Perjalanan antar kota dan layanan paket eksklusif (Dropping/PP & Menginap) dengan armada pilihan terbaik.</p>
+          </div>
+
+          <div id="container-filter-rute" style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 14px;"></div>
+          <div id="container-filter-paket" style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-bottom: 35px;"></div>
+          <div class="fleet" id="container-eksklusif"><p style="text-align:center;width:100%;">Memuat katalog eksklusif...</p></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- HALAMAN ARMADA -->
+    <div id="page-armada" class="page-section" style="display:none;">
+      <section class="cream" id="armada" style="padding: 60px 0;">
+        <div class="wrap">
+          <div class="section-head" style="margin-bottom: 30px;">
+            <div class="eyebrow">Pilihan Layanan & Armada</div>
+            <h2>Katalog Armada <span class="brand-inline"><span class="w1 brand-w1">PRASETYO</span> <span class="w2 brand-w2">TRANS</span></span></h2>
+            <p>Pilih jenis kendaraan serta kategori layanan spesifik yang Anda butuhkan di Bandar Lampung.</p>
+          </div>
+
+          <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 35px;">
+            <button class="btn filter-btn active-tab" onclick="filterKategori('Semua', event)" style="background: var(--gold); color:#fff; border-color: var(--gold);">Semua Layanan</button>
+            <button class="btn btn-outline filter-btn" onclick="filterKategori('Antar Jemput Hotel & Bandara', event)" style="color: #333; border-color: #d1cbd0;">Antar Jemput Bandara</button>
+            <button class="btn btn-outline filter-btn" onclick="filterKategori('GRATIS BBM DAN TOL', event)" style="color: #333; border-color: #d1cbd0;">GRATIS BBM DAN TOL</button>
+            <button class="btn btn-outline filter-btn" onclick="filterKategori('Sewa Mobil & Driver', event)" style="color: #333; border-color: #d1cbd0;">Dengan Driver</button>
+            <button class="btn btn-outline filter-btn" onclick="filterKategori('Rental Mobil Lepas Kunci', event)" style="color: #333; border-color: #d1cbd0;">Lepas Kunci</button>
+          </div>
+
+          <div class="fleet" id="container-katalog"><p style="text-align:center;width:100%;">Memuat katalog armada...</p></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- HALAMAN TENTANG KAMI -->
+    <div id="page-tentang" class="page-section" style="display:none;">
+      <section id="tentang">
+        <div class="wrap about-grid">
+          <div class="about-copy">
+            <div class="eyebrow">Mengenal kami</div>
+            <h2 id="tentang-judul">Mitra Perjalanan Terpercaya di Lampung</h2>
+            <p id="tentang-p1">Prasetyo Trans merupakan penyedia layanan rental mobil dan transportasi yang melayani kebutuhan perjalanan dari Bandar Lampung ke berbagai tujuan.</p>
+            <p id="tentang-p2">Kami mengutamakan komunikasi yang jelas, pelayanan yang ramah, serta informasi pemesanan yang transparan tanpa biaya tersembunyi.</p>
+            
+            <div class="checks">
+              <div>Tanpa DP / No Transfer Duluan</div>
+              <div>Harga Deal di Awal (Tanpa Biaya Tersembunyi)</div>
+              <div>Antar Jemput Bandara Radin Inten II & Hotel</div>
+              <div>Driver Profesional & Hafal Rute Lampung</div>
+            </div>
+
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 4px solid var(--gold); border-radius: 6px; padding: 18px 20px; margin: 22px 0;">
+              <div style="font-size: 11px; font-weight: 700; letter-spacing: 0.12em; color: var(--gold); text-transform: uppercase; margin-bottom: 12px;">
+                ✦ Informasi Resmi & Layanan Pelanggan
+              </div>
+              
+              <div style="display: grid; gap: 10px; font-size: 13.5px; color: var(--ink);">
+                <div>
+                  <strong>📞 Telepon / WhatsApp 24 Jam:</strong><br>
+                  <a class="link-wa" href="https://wa.me/6283172886568" target="_blank" rel="noopener" style="color: #0088cc; font-weight: 700; font-size: 15px;" id="telepon-tampil">0831-7288-6568</a>
+                  <span style="font-size: 12px; color: var(--muted);"> (Fast Response Admin)</span>
+                </div>
+
+                <div>
+                  <strong>📍 Alamat Pool / Kantor:</strong><br>
+                  <span style="color: #475569;" id="alamat-kantor">Gg. Nangka IV, Harapan Jaya, Sukarame, Bandar Lampung, Lampung, Indonesia</span>
+                  <span id="container-maps-url"></span>
+                </div>
+
+                <div>
+                  <strong>🕒 Jam Operasional:</strong><br>
+                  <span style="color: #475569;" id="jam-operasional">Buka 24 Jam (Layanan Antar Jemput & Reservasi Online)</span>
+                </div>
+
+                <div>
+                  <strong>🛡️ Jaminan Keamanan Transaksi:</strong><br>
+                  <span style="color: #15803d; font-weight: 600;">✓ Bebas Penipuan — Pembayaran dilakukan saat unit & driver tiba di lokasi penjemputan.</span>
+                </div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <a class="btn link-wa-tanya" href="https://wa.me/6283172886568?text=Halo%20Admin%20Prasetyo%20Trans,%20saya%20ingin%20tanya%20ketersediaan%20unit%20mobil" target="_blank" rel="noopener">CHAT WHATSAPP SEKARANG ↗</a>
+              <a class="btn link-booking" style="background: var(--ink); border-color: var(--ink);" href="https://wa.me/6283172886568" target="_blank" rel="noopener">FORMULIR BOOKING ↗</a>
+            </div>
+          </div>
+
+          <div style="background: #fdfbf7; padding: 15px; border-radius: 12px; border: 1px solid #e9e5dc; display: flex; justify-content: center; align-items: center;">
+            <img id="tentang-gambar" src="" alt="Poster Prasetyo Trans" style="width: 100%; height: auto; max-height: 650px; object-fit: contain; border-radius: 8px; display:none;">
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- HALAMAN KONTAK -->
+    <div id="page-kontak" class="page-section" style="display:none;">
+      <section id="kontak">
+        <div class="wrap">
+          <div class="section-head">
+            <div class="eyebrow">Terhubung dengan kami</div>
+            <h2>Kontak <span class="brand-inline"><span class="w1 brand-w1">PRASETYO</span> <span class="w2 brand-w2">TRANS</span></span></h2>
+            <p>Silakan hubungi kami atau kunjungi kanal resmi untuk informasi layanan dan pemesanan.</p>
+          </div>
+          <div class="contact-grid">
+            <div class="contact-card"><div class="eyebrow">WhatsApp</div><strong>Admin</strong><p>Konsultasi layanan, jadwal, dan ketersediaan kendaraan.</p><p style="margin-top:15px"><a class="btn link-wa" href="https://wa.me/6283172886568" target="_blank" rel="noopener">CHAT WHATSAPP ↗</a></p></div>
+            <div class="contact-card"><div class="eyebrow">Pemesanan</div><strong>Booking Online</strong><p>Akses tautan pemesanan dan informasi layanan dalam satu halaman.</p><p style="margin-top:15px"><a class="btn link-booking" href="https://wa.me/6283172886568" target="_blank" rel="noopener">ISI FORMULIR PEMESANAN ↗</a></p></div>
+            <div class="contact-card"><div class="eyebrow">Media Sosial</div><strong>Ikuti Kami</strong><p>Temukan informasi layanan, promosi, dan update perjalanan.</p><p style="margin-top:15px"><a class="btn" id="link-ig" href="https://www.tiktok.com/@gilanggprasetyoo" target="_blank" rel="noopener">LIHAT KANAL ↗</a></p></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div class="brand">
+        <div id="footer-logo-container">
+          <span class="brand-mark">P</span>
+        </div>
+        <div style="display:flex; flex-direction:column; justify-content:center;">
+          <div class="brand-text">
+            <span class="w1 brand-w1" style="color: #fff;">PRASETYO</span>
+            <span class="w2 brand-w2">TRANS</span>
+          </div>
+        </div>
+      </div>
+      <small>© <span id="year"></span> <span class="brand-inline"><span class="w1 brand-w1" style="color:#d8d3c8;">PRASETYO</span> <span class="w2 brand-w2">TRANS</span></span>. All rights reserved.</small>
+    </div>
+  </footer>
+  <a class="wa-float link-wa" href="https://wa.me/6283172886568" target="_blank" rel="noopener">☏ WA Admin</a>
+
+  <script>
+    // TEMPEL URL /exec GOOGLE APPS SCRIPT ANDA DI SINI:
+    const API_URL = 'https://script.google.com/macros/s/AKfycbz4L1sxr9pNGmqpLI6U7deN3iJd5vKIq3Jj8h9R--ig4FNT416V-WAPBEiVh-HHm-8vow/exec';
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function tampilHalaman(idHalaman, event) {
+      if (event) event.preventDefault();
+      document.querySelectorAll('.page-section').forEach(h => h.style.display = 'none');
+      const target = document.getElementById('page-' + idHalaman);
+      if (target) {
+        target.style.display = 'block';
+        window.scrollTo(0, 0);
+      }
+      const navLinks = document.getElementById('navLinks');
+      if (navLinks) navLinks.classList.remove('open');
+    }
+
+    function filterKategori(kategoriPilihan, event) {
+      if(event) event.preventDefault();
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.style.background = 'transparent';
+        btn.style.color = '#333';
+        btn.style.borderColor = '#d1cbd0';
+      });
+      event.target.style.background = 'var(--gold)';
+      event.target.style.color = '#fff';
+      event.target.style.borderColor = 'var(--gold)';
+
+      document.querySelectorAll('.item-card').forEach(card => {
+        const katCard = card.getAttribute('data-kategori');
+        card.style.display = (kategoriPilihan === 'Semua' || katCard === kategoriPilihan) ? 'block' : 'none';
+      });
+    }
+
+    let ruteAktif = 'Semua';
+    let paketAktif = 'Semua';
+
+    function pilihRute(rutePilihan, event) {
+      if (event) event.preventDefault();
+      ruteAktif = rutePilihan;
+      document.querySelectorAll('.filter-rute-btn').forEach(btn => {
+        btn.style.background = 'transparent';
+        btn.style.color = '#333';
+        btn.style.borderColor = '#d1cbd0';
+      });
+      event.target.style.background = '#141619';
+      event.target.style.color = '#f3d078';
+      event.target.style.borderColor = '#d4af37';
+      terapkanFilterEksklusif();
+    }
+
+    function pilihPaket(paketPilihan, event) {
+      if (event) event.preventDefault();
+      paketAktif = paketPilihan;
+      document.querySelectorAll('.filter-paket-btn').forEach(btn => {
+        btn.style.background = 'transparent';
+        btn.style.color = '#555';
+        btn.style.borderColor = '#d1cbd0';
+      });
+      event.target.style.background = '#b8860b';
+      event.target.style.color = '#fff';
+      event.target.style.borderColor = '#b8860b';
+      terapkanFilterEksklusif();
+    }
+
+    function terapkanFilterEksklusif() {
+      document.querySelectorAll('.eks-card').forEach(card => {
+        const cocokRute = (ruteAktif === 'Semua' || card.getAttribute('data-rute') === ruteAktif);
+        const cocokPaket = (paketAktif === 'Semua' || card.getAttribute('data-paket') === paketAktif);
+        card.style.display = (cocokRute && cocokPaket) ? 'block' : 'none';
+      });
+    }
+
+    // Ambil data otomatis dari Google Spreadsheet via Apps Script API
+    fetch(API_URL)
+      .then(res => res.json())
+      .then(data => {
+        const s = data.setting || {};
+        const wa = s.whatsapp || '6283172886568';
+
+        // Update warna & judul
+        if (s.warna_gelap) {
+          document.documentElement.style.setProperty('--ink', s.warna_gelap);
+          document.getElementById('meta-theme').content = s.warna_gelap;
+        }
+        if (s.warna_emas) document.documentElement.style.setProperty('--gold', s.warna_emas);
+        if (s.nama_bisnis) {
+          document.getElementById('page-title').textContent = s.nama_bisnis + ' | Rental Mobil';
+          const pisah = s.nama_bisnis.split(' ');
+          const kata1 = pisah[0];
+          const kata2 = pisah.slice(1).join(' ');
+          document.querySelectorAll('.brand-w1').forEach(el => el.textContent = kata1);
+          document.querySelectorAll('.brand-w2').forEach(el => el.textContent = kata2);
+        }
+
+        // Update logo
+        if (s.logo_gambar) {
+          document.getElementById('header-logo-container').innerHTML = `<img class="brand-mark" src="${s.logo_gambar}" alt="Logo">`;
+          document.getElementById('footer-logo-container').innerHTML = `<img class="brand-mark" style="width:35px;height:35px" src="${s.logo_gambar}" alt="Logo">`;
+        }
+
+        // Update teks & gambar
+        if (s.slogan) document.getElementById('brand-slogan').textContent = s.slogan;
+        if (s.kota_layanan) document.getElementById('kota-layanan').textContent = s.kota_layanan;
+        if (s.teks_topbar_kanan) document.getElementById('teks-topbar-kanan').textContent = s.teks_topbar_kanan;
+        if (s.hero_gambar) document.getElementById('home').style.backgroundImage = `linear-gradient(90deg,rgba(10,12,13,.94) 0%,rgba(10,12,13,.78) 48%,rgba(10,12,13,.18) 100%),url('${s.hero_gambar}')`;
+        if (s.hero_label) document.getElementById('hero-label').textContent = s.hero_label;
+        if (s.hero_judul) document.getElementById('hero-judul').textContent = s.hero_judul;
+        if (s.hero_judul_aksen) document.getElementById('hero-judul-aksen').textContent = s.hero_judul_aksen;
+        if (s.hero_deskripsi) document.getElementById('hero-deskripsi').textContent = s.hero_deskripsi;
+        if (s.tentang_judul) document.getElementById('tentang-judul').textContent = s.tentang_judul;
+        if (s.tentang_paragraf_1) document.getElementById('tentang-p1').textContent = s.tentang_paragraf_1;
+        if (s.tentang_paragraf_2) document.getElementById('tentang-p2').textContent = s.tentang_paragraf_2;
+        if (s.telepon_tampil) document.getElementById('telepon-tampil').textContent = s.telepon_tampil;
+        if (s.alamat) document.getElementById('alamat-kantor').textContent = s.alamat;
+        if (s.jam_operasional) document.getElementById('jam-operasional').textContent = s.jam_operasional;
+        if (s.maps_url) document.getElementById('container-maps-url').innerHTML = `<a href="${s.maps_url}" target="_blank" rel="noopener" style="color: var(--gold); font-weight: 600; font-size: 12px; margin-left: 6px;">[Buka Google Maps ↗]</a>`;
+        if (s.tentang_gambar) {
+          const imgTentang = document.getElementById('tentang-gambar');
+          imgTentang.src = s.tentang_gambar;
+          imgTentang.style.display = 'block';
+        }
+
+        // Update link tombol
+        document.querySelectorAll('.link-wa').forEach(el => el.href = `https://wa.me/${wa}`);
+        document.querySelectorAll('.link-wa-tanya').forEach(el => el.href = `https://wa.me/${wa}?text=Halo%20Admin%20Prasetyo%20Trans,%20saya%20ingin%20tanya%20ketersediaan%20unit%20mobil`);
+        if (s.booking_url) document.querySelectorAll('.link-booking').forEach(el => el.href = s.booking_url);
+        if (s.instagram_url) document.getElementById('link-ig').href = s.instagram_url;
+
+        // Render Katalog Reguler
+        const containerKatalog = document.getElementById('container-katalog');
+        if (data.katalog && data.katalog.length > 0) {
+          containerKatalog.innerHTML = data.katalog.map(item => `
+            <article class="car-card item-card" data-kategori="${item.kategori}">
+              <div class="car-photo" style="background-image:url('${item.gambar}')"></div>
+              <div class="car-body">
+                <span class="tag">${item.kategori}</span>
+                <h3 style="margin-top: 8px;">${item.nama}</h3>
+                <p style="font-size: 13px; color: var(--muted); margin-top: 5px; margin-bottom: 12px; line-height: 1.5; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">${item.deskripsi}</p>
+                <p style="color: var(--gold); font-weight: bold; font-size: 15px; margin-bottom: 8px;">${item.harga}</p>
+                <p style="font-size: 12px; color: var(--muted); margin-bottom: 15px;">⚙️ ${item.transmisi} &nbsp;|&nbsp; 👥 ${item.kursi}</p>
+                <a class="btn" style="width: 100%; text-align: center; box-sizing: border-box;" href="https://wa.me/${wa}?text=Halo%20Admin,%20saya%20tertarik%20pesan%20layanan%20*${encodeURIComponent(item.kategori)}*%20untuk%20unit%20*${encodeURIComponent(item.nama)}*" target="_blank" rel="noopener">Pesan Unit ↗</a>
+              </div>
+            </article>
+          `).join('');
+        }
+
+        // Render Filter & Katalog Eksklusif
+        const filterRute = document.getElementById('container-filter-rute');
+        filterRute.innerHTML = `<button class="btn filter-rute-btn" onclick="pilihRute('Semua', event)" style="background: #141619; color: #f3d078; border-color: #d4af37;">Semua Rute</button>` +
+          (data.daftarRute || []).map(r => `<button class="btn btn-outline filter-rute-btn" onclick="pilihRute('${r}', event)" style="color: #333; border-color: #d1cbd0;">${r}</button>`).join('');
+
+        const filterPaket = document.getElementById('container-filter-paket');
+        filterPaket.innerHTML = `<button class="btn filter-paket-btn" onclick="pilihPaket('Semua', event)" style="padding: 9px 16px; font-size: 11px; background: #b8860b; color: #fff; border-color: #b8860b;">Semua Paket</button>` +
+          (data.daftarPaket || []).map(p => `<button class="btn btn-outline filter-paket-btn" onclick="pilihPaket('${p}', event)" style="padding: 9px 16px; font-size: 11px; color: #555; border-color: #d1cbd0;">${p}</button>`).join('');
+
+        const containerEksklusif = document.getElementById('container-eksklusif');
+        if (data.eksklusif && data.eksklusif.length > 0) {
+          containerEksklusif.innerHTML = data.eksklusif.map(eks => `
+            <article class="car-card eks-card" data-rute="${eks.rute}" data-paket="${eks.paket}" style="border: 1px solid rgba(212, 175, 55, 0.55); box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);">
+              <div class="car-photo" style="background-image:url('${eks.gambar}')"></div>
+              <div class="car-body">
+                <span class="tag" style="background: #141619; color: #f3d078; border: 1px solid rgba(212, 175, 55, 0.5);">✦ ${eks.paket}</span>
+                <h3 style="margin-top: 10px; margin-bottom: 6px;">${eks.nama}</h3>
+                <p style="font-size: 13px; color: var(--ink); font-weight: 600; margin-top: 4px; margin-bottom: 10px; line-height: 1.5;">📍 ${eks.rute}</p>
+                <p style="color: #b8860b; font-weight: bold; font-size: 16px; margin-bottom: 8px;">${eks.harga}</p>
+                <p style="font-size: 12px; color: var(--muted); margin-bottom: 15px;">⚙️ ${eks.transmisi} &nbsp;|&nbsp; 👥 ${eks.kursi}</p>
+                <a class="btn-exclusive" style="width: 100%; text-align: center; box-sizing: border-box;" href="https://wa.me/${wa}?text=Halo%20Admin,%20saya%20tertarik%20pesan%20*Layanan%20Eksklusif*%0AUnit:%20*${encodeURIComponent(eks.nama)}*%0APaket:%20*${encodeURIComponent(eks.paket)}*%0ARute:%20*${encodeURIComponent(eks.rute)}*" target="_blank" rel="noopener">Pesan Layanan Eksklusif ↗</a>
+              </div>
+            </article>
+          `).join('');
+        }
+      })
+      .catch(err => console.error('Gagal memuat data:', err));
+  </script>
+</body>
+</html>
