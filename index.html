@@ -13,14 +13,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" id="meta-theme" content="#0b1b3d">
-  <title id="page-title">Prasetyo Trans | Rental Mobil Lampung</title>
+  <title id="page-title">PRASETYO TRANS | Rental Mobil</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Montserrat:wght@800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --ink: #0b1b3d;
-      --gold: #00aeef;
+      --ink: #0B1B3D;
+      --gold: #00AEEF;
       --gold2: #4dcbf7;
       --cream: #f6f3ed;
       --muted: #74716a;
@@ -38,6 +38,37 @@
       background:#fff;
     }
     a{text-decoration:none;color:inherit}
+
+    /* Layar Loading Mewah agar tidak berkedip versi lama */
+    #page-loader {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: #0c0e0f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+    #page-loader.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    .loader-spinner {
+      width: 44px;
+      height: 44px;
+      border: 3px solid rgba(0, 174, 239, 0.2);
+      border-top-color: #00aeef;
+      border-radius: 50%;
+      animation: spinLoader 0.8s linear infinite;
+      margin-bottom: 16px;
+    }
+    @keyframes spinLoader {
+      to { transform: rotate(360deg); }
+    }
+
     .wrap{width:min(1160px,92%);margin:auto;padding-left:15px;padding-right:15px;}
     .topbar{background:#0c0e0f;color:#d8d3c8;font-size:12px;padding:9px 0;letter-spacing:.04em}
     .topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
@@ -62,7 +93,7 @@
     .btn-outline{background:transparent;color:white;border-color:#ffffff70}
     .menu{display:none;background:none;border:1px solid #ffffff55;color:white;padding:8px 11px;font-size:20px;cursor:pointer;}
     
-    .hero{background:linear-gradient(90deg,rgba(10,12,13,.94) 0%,rgba(10,12,13,.78) 48%,rgba(10,12,13,.18) 100%),#0b1b3d center/cover;min-height:590px;color:white;display:flex;align-items:center}
+    .hero{background:linear-gradient(90deg,rgba(10,12,13,.94) 0%,rgba(10,12,13,.78) 48%,rgba(10,12,13,.18) 100%),url('https://lh3.googleusercontent.com/d/1XCTawjJC2lGw23A4aZ7J2cGy32eToFnh') center/cover;min-height:590px;color:white;display:flex;align-items:center}
     .hero-copy{max-width:620px;padding:82px 0}
     .eyebrow{color:var(--gold2);font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
     h1,h2,h3,p{margin-top:0}
@@ -162,10 +193,20 @@
 </head>
 <body>
 
+  <!-- LAYAR LOADING SINGKAT SAMPAI DATA SPREADSHEET SIAP -->
+  <div id="page-loader">
+    <div class="loader-spinner"></div>
+    <div class="brand-text" style="align-items:center; text-align:center;">
+      <span class="w1" style="font-size:20px;">PRASETYO</span>
+      <span class="w2" style="font-size:20px;">TRANS</span>
+    </div>
+    <small style="color:#a8a39a; font-size:10px; letter-spacing:0.2em; margin-top:8px; text-transform:uppercase;">Memuat Katalog Terbaru...</small>
+  </div>
+
   <div class="topbar">
     <div class="wrap">
-      <span id="kota-layanan">Bandar Lampung & Seluruh Wilayah Lampung</span>
-      <span id="teks-topbar-kanan">Buka 24 Jam • No Transfer Duluan</span>
+      <span id="kota-layanan">BANDAR LAMPUNG</span>
+      <span id="teks-topbar-kanan">KAMI SIAP MENJADI MITRA PERJALANAN ANDA</span>
     </div>
   </div>
 
@@ -173,14 +214,14 @@
     <div class="wrap nav">
       <a class="brand" href="#" onclick="tampilHalaman('beranda', event)">
         <div id="header-logo-container">
-          <span class="brand-mark">P</span>
+          <img class="brand-mark" src="https://lh3.googleusercontent.com/d/1_DV9QwBIzS4o21iGpHdqUTfYNPsVUej0" alt="Logo">
         </div>
         <div style="display:flex; flex-direction:column; justify-content:center;">
           <div class="brand-text">
             <span class="w1 brand-w1">PRASETYO</span>
             <span class="w2 brand-w2">TRANS</span>
           </div>
-          <small id="brand-slogan" style="color:#a8a39a; font-size:9px; letter-spacing:0.18em; font-weight:600; margin-top:3px; text-transform:uppercase;">SEWA MOBIL LAMPUNG</small>
+          <small id="brand-slogan" style="color:#a8a39a; font-size:9px; letter-spacing:0.18em; font-weight:600; margin-top:3px; text-transform:uppercase;">SEWA MOBIL BANDAR LAMPUNG</small>
         </div>
       </a>
       <nav class="links" id="navLinks">
@@ -190,7 +231,7 @@
         <a href="#" onclick="tampilHalaman('tentang', event)">Tentang Kami</a>
         <a href="#" onclick="tampilHalaman('kontak', event)">Kontak</a>
       </nav>
-      <a class="btn link-booking" href="https://wa.me/6283172886568" target="_blank" rel="noopener">QUICK BOOKING</a>
+      <a class="btn link-booking" href="https://forms.gle/CFRZA9BkSCACN33a6" target="_blank" rel="noopener">QUICK BOOKING</a>
       <button class="menu" aria-label="Buka menu" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
     </div>
   </header>
@@ -200,11 +241,11 @@
     <div id="page-beranda" class="page-section">
       <section class="hero" id="home">
         <div class="wrap"><div class="hero-copy">
-          <div class="eyebrow" id="hero-label">RENTAL MOBIL & TRANSPORTASI LAMPUNG</div>
-          <h1><span id="hero-judul" style="color:white;">Perjalanan Nyaman</span><br><span id="hero-judul-aksen">dan Hati Tenang</span></h1>
-          <p id="hero-deskripsi">Layanan sewa mobil Bandar Lampung lepas kunci, dengan driver, maupun antar jemput bandara. Harga deal di awal tanpa biaya tersembunyi.</p>
+          <div class="eyebrow" id="hero-label">Rental Mobil & Layanan Antar Jemput Bandara</div>
+          <h1><span id="hero-judul" style="color:white;">Perjalanan Nyaman dan Hati Tenang</span><br><span id="hero-judul-aksen">Bersama Prasetyo Trans</span></h1>
+          <p id="hero-deskripsi">Temukan solusi transportasi untuk perjalanan pribadi, keluarga, wisata, hingga kebutuhan perjalanan dinas. Prasetyo Trans siap menemani perjalanan Anda. Tidak ada embel embel biaya ini itu seperti rental lainnya, uang penjemputan atau uang kebersihan mobil dan apalah lainnya itu. Semua harga sudah deal dan tertulis jelas pada website kami di awal anda melakukan pemesanan</p>
           <div class="hero-actions">
-            <a class="btn link-booking" href="https://wa.me/6283172886568" target="_blank" rel="noopener">PESAN SEKARANG ↗</a>
+            <a class="btn link-booking" href="https://forms.gle/CFRZA9BkSCACN33a6" target="_blank" rel="noopener">PESAN SEKARANG ↗</a>
             <button class="btn btn-outline" onclick="tampilHalaman('armada', event)">LAYANAN REGULER</button>
             <button class="btn-exclusive" onclick="tampilHalaman('layanan', event)">✦ LAYANAN EKSKLUSIF</button>
           </div>
@@ -259,9 +300,9 @@
         <div class="wrap about-grid">
           <div class="about-copy">
             <div class="eyebrow">Mengenal kami</div>
-            <h2 id="tentang-judul">Mitra Perjalanan Terpercaya di Lampung</h2>
-            <p id="tentang-p1">Prasetyo Trans merupakan penyedia layanan rental mobil dan transportasi yang melayani kebutuhan perjalanan dari Bandar Lampung ke berbagai tujuan.</p>
-            <p id="tentang-p2">Kami mengutamakan komunikasi yang jelas, pelayanan yang ramah, serta informasi pemesanan yang transparan tanpa biaya tersembunyi.</p>
+            <h2 id="tentang-judul">Mitra Perjalanan Terpercaya di Bandar Lampung: Aman, Transparan, & Tanpa Ribet.</h2>
+            <p id="tentang-p1">Prasetyo Trans hadir sebagai solusi transportasi terbaik untuk perjalanan dinas, liburan keluarga, wisata bahari Lampung, hingga perjalanan antar kota (Palembang & Jabodetabek). Dipercaya oleh ribuan pelanggan dari dalam maupun luar Provinsi Lampung, kami memastikan setiap armada selalu dalam kondisi prima, bersih, dan wangi sebelum menjemput Anda.</p>
+            <p id="tentang-p2">Kami menerapkan sistem 100% Transparan & Amanah. Semua tarif sudah disepakati di awal tanpa biaya tersembunyi—tidak ada biaya tambahan uang kebersihan maupun biaya penjemputan. Nikmati kemudahan pemesanan dengan sistem Ketemu, Pembayaran, Langsung Berangkat (Tanpa Transfer Duluan) untuk ketenangan dan keamanan perjalanan Anda.</p>
             
             <div class="checks">
               <div>Tanpa DP / No Transfer Duluan</div>
@@ -302,12 +343,12 @@
 
             <div style="display: flex; gap: 12px; flex-wrap: wrap;">
               <a class="btn link-wa-tanya" href="https://wa.me/6283172886568?text=Halo%20Admin%20Prasetyo%20Trans,%20saya%20ingin%20tanya%20ketersediaan%20unit%20mobil" target="_blank" rel="noopener">CHAT WHATSAPP SEKARANG ↗</a>
-              <a class="btn link-booking" style="background: var(--ink); border-color: var(--ink);" href="https://wa.me/6283172886568" target="_blank" rel="noopener">FORMULIR BOOKING ↗</a>
+              <a class="btn link-booking" style="background: var(--ink); border-color: var(--ink);" href="https://forms.gle/CFRZA9BkSCACN33a6" target="_blank" rel="noopener">FORMULIR BOOKING ↗</a>
             </div>
           </div>
 
           <div style="background: #fdfbf7; padding: 15px; border-radius: 12px; border: 1px solid #e9e5dc; display: flex; justify-content: center; align-items: center;">
-            <img id="tentang-gambar" src="" alt="Poster Prasetyo Trans" style="width: 100%; height: auto; max-height: 650px; object-fit: contain; border-radius: 8px; display:none;">
+            <img id="tentang-gambar" src="https://lh3.googleusercontent.com/d/1ZRea66r7v6hqin80M9IjHrJE3b_Hccqq" alt="Poster Prasetyo Trans" style="width: 100%; height: auto; max-height: 650px; object-fit: contain; border-radius: 8px; display:block;">
           </div>
         </div>
       </section>
@@ -324,8 +365,8 @@
           </div>
           <div class="contact-grid">
             <div class="contact-card"><div class="eyebrow">WhatsApp</div><strong>Admin</strong><p>Konsultasi layanan, jadwal, dan ketersediaan kendaraan.</p><p style="margin-top:15px"><a class="btn link-wa" href="https://wa.me/6283172886568" target="_blank" rel="noopener">CHAT WHATSAPP ↗</a></p></div>
-            <div class="contact-card"><div class="eyebrow">Pemesanan</div><strong>Booking Online</strong><p>Akses tautan pemesanan dan informasi layanan dalam satu halaman.</p><p style="margin-top:15px"><a class="btn link-booking" href="https://wa.me/6283172886568" target="_blank" rel="noopener">ISI FORMULIR PEMESANAN ↗</a></p></div>
-            <div class="contact-card"><div class="eyebrow">Media Sosial</div><strong>Ikuti Kami</strong><p>Temukan informasi layanan, promosi, dan update perjalanan.</p><p style="margin-top:15px"><a class="btn" id="link-ig" href="https://www.tiktok.com/@gilanggprasetyoo" target="_blank" rel="noopener">LIHAT KANAL ↗</a></p></div>
+            <div class="contact-card"><div class="eyebrow">Pemesanan</div><strong>Booking Online</strong><p>Akses tautan pemesanan dan informasi layanan dalam satu halaman.</p><p style="margin-top:15px"><a class="btn link-booking" href="https://forms.gle/CFRZA9BkSCACN33a6" target="_blank" rel="noopener">ISI FORMULIR PEMESANAN ↗</a></p></div>
+            <div class="contact-card"><div class="eyebrow">Media Sosial</div><strong>Ikuti Kami</strong><p>Temukan informasi layanan, promosi, dan update perjalanan.</p><p style="margin-top:15px"><a class="btn" id="link-ig" href="https://linktr.ee/gilangprasetyo.LS" target="_blank" rel="noopener">LIHAT KANAL ↗</a></p></div>
           </div>
         </div>
       </section>
@@ -336,7 +377,7 @@
     <div class="wrap foot">
       <div class="brand">
         <div id="footer-logo-container">
-          <span class="brand-mark">P</span>
+          <img class="brand-mark" style="width:35px;height:35px" src="https://lh3.googleusercontent.com/d/1_DV9QwBIzS4o21iGpHdqUTfYNPsVUej0" alt="Logo">
         </div>
         <div style="display:flex; flex-direction:column; justify-content:center;">
           <div class="brand-text">
@@ -351,10 +392,17 @@
   <a class="wa-float link-wa" href="https://wa.me/6283172886568" target="_blank" rel="noopener">☏ WA Admin</a>
 
   <script>
-    // TEMPEL URL /exec GOOGLE APPS SCRIPT ANDA DI SINI:
     const API_URL = 'https://script.google.com/macros/s/AKfycbz4L1sxr9pNGmqpLI6U7deN3iJd5vKIq3Jj8h9R--ig4FNT416V-WAPBEiVh-HHm-8vow/exec';
 
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    function sembunyikanLoader() {
+      const loader = document.getElementById('page-loader');
+      if (loader) loader.classList.add('hidden');
+    }
+
+    // Pengaman otomatis: tutup layar loading maksimal 2.5 detik jika jaringan lambat
+    setTimeout(sembunyikanLoader, 2500);
 
     function tampilHalaman(idHalaman, event) {
       if (event) event.preventDefault();
@@ -523,8 +571,14 @@
             </article>
           `).join('');
         }
+
+        // Hilangkan layar loading setelah semua data selesai terpasang
+        sembunyikanLoader();
       })
-      .catch(err => console.error('Gagal memuat data:', err));
+      .catch(err => {
+        console.error('Gagal memuat data:', err);
+        sembunyikanLoader();
+      });
   </script>
 </body>
 </html>
