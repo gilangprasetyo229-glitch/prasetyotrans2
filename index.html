@@ -143,9 +143,23 @@
                   url('https://lh3.googleusercontent.com/d/1WusSaAIY1roLvDa9ZdPR5wnj_YW8nY4Z') center/contain no-repeat fixed;
     }
     
-    footer{background:#0c0e0f;color:#c9c4b9;padding:45px 0}
+footer{background:#0c0e0f;color:#c9c4b9;padding:45px 0 75px}
     .foot{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
     footer small{font-size:12px;line-height:1.7}
+    .footer-motto{
+      margin-top: 26px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      font-size: 12px;
+      color: #8c877e;
+      line-height: 1.6;
+    }
+    .footer-motto span{
+      color: var(--gold2);
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
     .wa-float{position:fixed;right:20px;bottom:20px;z-index:20;background:#1fa855;color:white;border-radius:30px;padding:13px 18px;font-size:12px;font-weight:700;box-shadow:0 8px 25px #0003}
     
     .btn-exclusive {
@@ -383,7 +397,7 @@
     </div>
   </main>
 
-  <footer>
+<footer>
     <div class="wrap foot">
       <div class="brand">
         <div id="footer-logo-container">
@@ -397,6 +411,13 @@
         </div>
       </div>
       <small>© <span id="year"></span> <span class="brand-inline"><span class="w1 brand-w1" style="color:#d8d3c8;">PRASETYO</span> <span class="w2 brand-w2">TRANS</span></span>. All rights reserved.</small>
+    </div>
+
+    <div class="wrap">
+      <div class="footer-motto">
+        <span>Creator's Motto:</span> 
+        <em>"Perusahaan dikelola sendiri oleh orang hebat multitalenta. Di kantor jadi admin ngelola website, bikin dokumen dan invoice abis itu mencari orderan, giliran di lapangan jadi sopir bawa penumpang, pulang dari pelayanan jadi tukang langsir bensin dan solar, kalau BBM sudah penuh jadi tukang steam cuci mobil bersihin mobil biar penumpang nyaman. Tidurnya di kelas aja pas kuliah."</em>
+      </div>
     </div>
   </footer>
   <a class="wa-float link-wa" href="https://wa.me/6283172886568" target="_blank" rel="noopener">☏ WA Admin</a>
