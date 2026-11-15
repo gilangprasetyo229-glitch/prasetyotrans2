@@ -137,6 +137,30 @@
     .contact-card{padding:25px;border:1px solid #e9e5dc;background:rgba(255,255,255,0.9)}
     .contact-card strong{display:block;margin:12px 0 7px}
     .contact-card p{font-size:13px;color:var(--muted);line-height:1.6;margin:0}
+    .card-showcase{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 16px;
+    }
+    .bcard-box{
+      background: #fff;
+      padding: 14px;
+      border: 1px solid #e9e5dc;
+      border-radius: 12px;
+      box-shadow: 0 10px 28px rgba(11, 27, 61, 0.08);
+      text-align: center;
+    }
+    .bcard-box img{
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      border: 1px solid #f1f5f9;
+    }
+    @media(max-width:640px){
+      .card-showcase{grid-template-columns: 1fr;}
+    }
     
     #layanan, #kontak {
       background: linear-gradient(rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.94)), 
@@ -208,7 +232,7 @@ footer{background:#0c0e0f;color:#c9c4b9;padding:45px 0 75px}
     }
 
     @media(max-width:850px){.links{gap:13px;font-size:12px}.about-grid{gap:30px}}
-    @media(max-width:640px){
+    @media(max-width:640px){.foot-right{text-align:left !important;}
       .topbar .wrap{justify-content:center;text-align:center}.nav{min-height:66px}.menu{display:block}.links{display:none;position:absolute;top:66px;left:0;right:0;background:#151719;padding:18px 4%;flex-direction:column;align-items:flex-start;border-top:1px solid #ffffff20}.links.open{display:flex}.nav>.btn{display:none}
       .hero{min-height:590px;background-position:58% center}.hero-copy{padding:65px 0}.hero p{font-size:14px}.trustline{gap:12px;flex-direction:column;margin-top:32px}
       section{padding:62px 0}.contact-grid{grid-template-columns:1fr}.car-photo{height:220px}.about-grid{grid-template-columns:1fr}.about-copy h2{font-size:34px}.checks{grid-template-columns:1fr}
@@ -378,7 +402,7 @@ footer{background:#0c0e0f;color:#c9c4b9;padding:45px 0 75px}
       </section>
     </div>
 
-    <!-- HALAMAN KONTAK -->
+<!-- HALAMAN KONTAK -->
     <div id="page-kontak" class="page-section" style="display:none;">
       <section id="kontak">
         <div class="wrap">
@@ -387,11 +411,41 @@ footer{background:#0c0e0f;color:#c9c4b9;padding:45px 0 75px}
             <h2>Kontak <span class="brand-inline"><span class="w1 brand-w1">PRASETYO</span> <span class="w2 brand-w2">TRANS</span></span></h2>
             <p>Silakan hubungi kami atau kunjungi kanal resmi untuk informasi layanan dan pemesanan.</p>
           </div>
+          
           <div class="contact-grid">
             <div class="contact-card"><div class="eyebrow">WhatsApp</div><strong>Admin</strong><p>Konsultasi layanan, jadwal, dan ketersediaan kendaraan.</p><p style="margin-top:15px"><a class="btn link-wa" href="https://wa.me/6283172886568" target="_blank" rel="noopener">CHAT WHATSAPP ↗</a></p></div>
             <div class="contact-card"><div class="eyebrow">Pemesanan</div><strong>Booking Online</strong><p>Akses tautan pemesanan dan informasi layanan dalam satu halaman.</p><p style="margin-top:15px"><a class="btn link-booking" href="https://forms.gle/CFRZA9BkSCACN33a6" target="_blank" rel="noopener">ISI FORMULIR PEMESANAN ↗</a></p></div>
             <div class="contact-card"><div class="eyebrow">Media Sosial</div><strong>Ikuti Kami</strong><p>Temukan informasi layanan, promosi, dan update perjalanan.</p><p style="margin-top:15px"><a class="btn" id="link-ig" href="https://linktr.ee/gilangprasetyo.LS" target="_blank" rel="noopener">LIHAT KANAL ↗</a></p></div>
           </div>
+
+          <!-- KARTU NAMA DIGITAL (DEPAN & BELAKANG) -->
+          <div style="margin-top: 48px;">
+            <div style="text-align: center; margin-bottom: 18px;">
+              <div class="eyebrow">Kartu Nama & Pricelist Resmi</div>
+              <p style="font-size: 13px; color: var(--muted); margin-top: 6px;">Simpan kartu nama digital kami untuk kemudahan pemesanan kapan saja.</p>
+            </div>
+
+            <div class="card-showcase">
+              <!-- Sisi Depan -->
+              <div class="bcard-box">
+                <img src="1.png" alt="Kartu Nama Prasetyo Trans - Depan">
+                <div style="margin-top: 12px; display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+                  <span style="font-size: 12px; font-weight: 700; color: var(--ink);">Tampak Depan</span>
+                  <a href="1.png" download="Kartu-Nama-Prasetyo-Trans-Depan.png" class="btn" style="padding: 8px 14px; font-size: 11px;">UNDUH ⬇</a>
+                </div>
+              </div>
+
+              <!-- Sisi Belakang (Daftar Harga) -->
+              <div class="bcard-box">
+                <img src="2.png" alt="Kartu Nama Prasetyo Trans - Daftar Harga">
+                <div style="margin-top: 12px; display: flex; justify-content: space-between; align-items: center; gap: 10px;">
+                  <span style="font-size: 12px; font-weight: 700; color: var(--ink);">Daftar Harga Layanan</span>
+                  <a href="2.png" download="Pricelist-Prasetyo-Trans.png" class="btn" style="padding: 8px 14px; font-size: 11px; background: var(--ink); border-color: var(--ink);">UNDUH ⬇</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
     </div>
@@ -413,9 +467,10 @@ footer{background:#0c0e0f;color:#c9c4b9;padding:45px 0 75px}
 <div style="text-align: right; line-height: 1.6;">
         <small style="display: block;">© <span id="year"></span> <span class="brand-inline"><span class="w1 brand-w1" style="color:#d8d3c8;">PRASETYO</span> <span class="w2 brand-w2">TRANS</span></span>. All rights reserved.</small>
         <small style="display: block; color: #8c877e; font-size: 11.5px;">
-          This Website Owned & Developed by <a href="https://linktr.ee/gilangprasetyo.LS" target="_blank" rel="noopener" style="color: var(--gold2); font-weight: 600;">Gilang Prasetyo</a>
+          This Website Owned & Developed by <a href="https://www.instagram.com/gilxng.prstyxx?exln=cTI1dTBpeHlrMWpm" target="_blank" rel="noopener" style="color: var(--gold2); font-weight: 600;">Gilang Prasetyo</a>
         </small>
       </div>
+    </div>
 
     <div class="wrap">
       <div class="footer-motto">
